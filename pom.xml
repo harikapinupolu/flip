@@ -15,7 +15,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <plugin>
+   <distributionManagement>
+    <repository>
+      <id>Tomcat site</id>
+      <url>http://localhost:8082/manager/html</url>
+    </repository>
+  </distributionManagement>
+<plugin>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.1.1</version>
                 <extensions>false</extensions>
@@ -24,10 +30,5 @@
                 </configuration>            
   </plugin>
 
-  <distributionManagement>
-    <repository>
-      <id>Tomcat site</id>
-      <url>http://localhost:8082/manager/html</url>
-    </repository>
-  </distributionManagement>
 </project>
+
