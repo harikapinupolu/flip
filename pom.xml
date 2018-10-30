@@ -15,12 +15,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-   <distributionManagement>
+  <distributionManagement>
     <repository>
-      <id>Tomcat site</id>
-      <url>http://localhost:8082/manager/html</url>
+        <id>central</id>
+        <name>SHARAN-PC-releases</name>
+        <url>http://localhost:8081/artifactory/libs-release</url>
     </repository>
-  </distributionManagement>
+</distributionManagement>
   <properties>
     <failOnMissingWebXml>false</failOnMissingWebXml>   
   </properties>
